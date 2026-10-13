@@ -1,0 +1,505 @@
+successModal.classList.add('opacity-0');
+            modalContent.classList.remove('scale-100');
+            modalContent.classList.add('scale-95');
+            setTimeout(() => {
+                successModal.classList.add('hidden');
+            }, 300);<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안심폐차 센터 - 투명하고 신속한 친환경 폐차 서비스</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter / Pretendard -->
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 bg-gradient-to-tr from-emerald-600 to-teal-500 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-500/20 group-hover:scale-105 transition">
+                    <i class="fa-solid fa-car-burst text-xl"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent">안심폐차</span>
+                    <span class="block text-xs font-medium text-slate-400">정부인증 관허폐차장</span>
+                </div>
+            </a>
+            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-emerald-600 transition">회사소개</a>
+                <a href="#process" class="hover:text-emerald-600 transition">폐차절차</a>
+                <a href="#documents" class="hover:text-emerald-600 transition">필요서류</a>
+                <a href="#inquiry" class="hover:text-emerald-600 transition">견적 및 문의</a>
+                <a href="#history" class="hover:text-emerald-600 transition">접수현황</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="tel:1588-0000" class="hidden sm:flex items-center gap-2 bg-emerald-50 text-emerald-700 font-bold px-4 py-2.5 rounded-xl border border-emerald-100 hover:bg-emerald-100 transition">
+                    <i class="fa-solid fa-phone-volume animate-bounce"></i>
+                    <span>1588-0000</span>
+                </a>
+                <a href="#inquiry" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-emerald-600/20 transition transform active:scale-95">
+                    간편 견적신청
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 text-white py-24 lg:py-32">
+        <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-sm font-semibold">
+                        <i class="fa-solid fa-shield-halved"></i> 관허 제2024-1호 공식 인증 업체
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        가장 안전하고 투명한<br><span class="text-emerald-400">최고가 보장</span> 폐차 서비스
+                    </h1>
+                    <p class="text-lg text-slate-300 max-w-xl mx-auto lg:mx-0">
+                        무료 견인부터 말소등록까지 원스톱으로 처리해 드립니다. 복잡한 절차 없이 내 차 폐차 보상금을 실시간으로 확인해보세요.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#inquiry" class="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-8 py-4 rounded-xl shadow-xl shadow-emerald-500/20 text-center transition flex items-center justify-center gap-2">
+                            <span>실시간 견적 신청하기</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#process" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-slate-200 font-semibold px-8 py-4 rounded-xl border border-slate-700 text-center transition">
+                            폐차 절차 알아보기
+                        </a>
+                    </div>
+                    <!-- Stats Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800 text-left">
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-emerald-400">15년+</div>
+                            <div class="text-xs sm:text-sm text-slate-400">신뢰의 업력</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-emerald-400">5만대+</div>
+                            <div class="text-xs sm:text-sm text-slate-400">안전 말소 완료</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl sm:text-3xl font-black text-emerald-400">100%</div>
+                            <div class="text-xs sm:text-sm text-slate-400">말소 보장 및 책임</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Visual Card -->
+                <div class="relative">
+                    <div class="bg-gradient-to-tr from-emerald-600/20 to-teal-500/10 p-2 rounded-3xl border border-emerald-500/20 backdrop-blur-xl">
+                        <div class="bg-slate-900/90 rounded-2xl p-6 sm:p-8 space-y-6 shadow-2xl">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                                </div>
+                                <span class="text-xs font-mono text-slate-400">SYSTEM READY</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/50 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl shrink-0">
+                                        <i class="fa-solid fa-truck-fast"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm">무료 견인 서비스</h4>
+                                        <p class="text-xs text-slate-400">전국 어디든 고객님이 원하시는 장소로 무료 방문 견인</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/50 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-teal-500/20 text-teal-400 flex items-center justify-center text-xl shrink-0">
+                                        <i class="fa-solid fa-coins"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm">고철값 즉시 입금</h4>
+                                        <p class="text-xs text-slate-400">차량 인수 즉시 당일 고철 보상금 및 리사이클링 추가금 지급</p>
+                                    </div>
+                                </div>
+                                <div class="p-4 rounded-xl bg-slate-800/80 border border-slate-700/50 flex items-center gap-4">
+                                    <div class="w-12 h-12 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+                                        <i class="fa-solid fa-file-shield"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm">법적 말소증 완벽 발급</h4>
+                                        <p class="text-xs text-slate-400">관공서 말소 완료 후 말소사실증명서 즉시 발송</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">About Us</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">왜 안심폐차 센터를 선택해야 할까요?</h2>
+                <p class="text-slate-600">무허가 대행업체를 통할 경우 말소 지연 및 대포차 악용 등 피해가 발생할 수 있습니다. 정식 관허업체에서 안전하게 처리하세요.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">정부 지정 관허폐차장</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">한국자동차해체재활용협회 정식 등록 업체로, 법적 보호를 받으며 안전하고 신뢰할 수 있는 폐차 서비스를 제공합니다.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">최고가 보상금 지급</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">차량의 부품 가치 및 고철 시세를 정확히 반영하여 중간 수수료 없이 타사 대비 더 많은 보상금을 안겨드립니다.</p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 hover:shadow-xl transition group">
+                    <div class="w-14 h-14 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">스마트 원스톱 시스템</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">접수부터 차량 인수, 말소 완료 증명서 발송까지 전 과정을 전담 카마스터가 실시간으로 안내해 드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">Step by Step</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">간편한 4단계 폐차 절차</h2>
+                <p class="text-slate-600">복잡한 서류나 방문 없이 전화 또는 온라인으로 간편하게 신청하세요.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden group hover:border-emerald-500 transition">
+                    <div class="absolute -right-4 -bottom-4 text-slate-100 font-black text-7xl select-none group-hover:text-emerald-50 transition">01</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-lg mb-6 shadow-md shadow-emerald-600/20">1</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">접수 및 견적 상담</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">차량 번호와 기본 정보를 알려주시면 예상 견적과 압류·저당 여부를 즉시 조회해 드립니다.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden group hover:border-emerald-500 transition">
+                    <div class="absolute -right-4 -bottom-4 text-slate-100 font-black text-7xl select-none group-hover:text-emerald-50 transition">02</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-lg mb-6 shadow-md shadow-emerald-600/20">2</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">무료 방문 견인</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">고객님이 계신 곳으로 전문 기사님이 방문하여 안전하게 차량을 무상 견인해 드립니다.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden group hover:border-emerald-500 transition">
+                    <div class="absolute -right-4 -bottom-4 text-slate-100 font-black text-7xl select-none group-hover:text-emerald-50 transition">03</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-lg mb-6 shadow-md shadow-emerald-600/20">3</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">차량 입고 및 보상금</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">폐차장에 차량 입고 후 차량 검수 완료 즉시 고철 보상금을 고객님 계좌로 입금해 드립니다.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200/60 relative overflow-hidden group hover:border-emerald-500 transition">
+                    <div class="absolute -right-4 -bottom-4 text-slate-100 font-black text-7xl select-none group-hover:text-emerald-50 transition">04</div>
+                    <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white font-bold flex items-center justify-center text-lg mb-6 shadow-md shadow-emerald-600/20">4</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">말소 등록 완료</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">관공서 말소 업무를 신속하게 처리하고 말소사실증명서를 카카오톡 또는 문자로 발송해 드립니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="documents" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">Required Documents</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">폐차 필요 서류 안내</h2>
+                <p class="text-slate-600">개인 및 법인 명의에 따라 필요한 서류가 다르니 확인 후 준비해 주세요. (사진 전송 가능)</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Personal Card -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">개인 명의</h3>
+                            <p class="text-xs text-slate-500">일반 폐차 기준 서류</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>자동차등록증 원본 (차량 내 비치 가능)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>신분증 사본 (주민등록증, 운전면허증 또는 사진 촬영본)</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Corporate Card -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-teal-600 text-white flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">법인 명의</h3>
+                            <p class="text-xs text-slate-500">법인 차량 폐차 기준 서류</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3 text-slate-700 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>자동차등록증 원본</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>사업자등록증 사본</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>법인등기부등본 (말소사항 포함 / 원본)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-circle-check text-emerald-600"></i>
+                            <span>법인인감증명서 및 인감도장 날인</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inquiry" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:20px_20px]"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center space-y-4 mb-12">
+                <span class="text-emerald-400 font-bold tracking-wider uppercase text-sm">Real-time Estimate & Inquiry</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">실시간 폐차 견적 및 문의 접수</h2>
+                <p class="text-slate-400">정보를 남겨주시면 전문 상담사가 5분 내로 연락드려 최고가 견적과 상세 안내를 도와드립니다.</p>
+            </div>
+            
+            <div class="bg-slate-800/90 border border-slate-700/80 p-8 sm:p-10 rounded-3xl shadow-2xl backdrop-blur-md">
+                <form id="inquiryForm" class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">신청자 성함 *</label>
+                            <input type="text" id="userName" required placeholder="홍길동" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">연락처 *</label>
+                            <input type="tel" id="userPhone" required placeholder="010-0000-0000" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">차량 번호 *</label>
+                            <input type="text" id="carNumber" required placeholder="123가4567" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-300 mb-2">차량 모델명</label>
+                            <input type="text" id="carModel" placeholder="예: 아반떼, 그랜저, 쏘나타" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">폐차 유형 선택 *</label>
+                        <select id="scrapType" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white focus:outline-none focus:border-emerald-500 transition">
+                            <option value="일반폐차">일반폐차 (압류 및 저당 없는 차량)</option>
+                            <option value="압류폐차">압류폐차 (차령초과말소)</option>
+                            <option value="조기폐차">조기폐차 (배출가스 4~5등급 경유차)</option>
+                            <option value="법인폐차">법인 명의 폐차</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-300 mb-2">문의 내용 또는 요청사항</label>
+                        <textarea id="userMessage" rows="4" placeholder="견인 희망 지역이나 궁금하신 점을 자유롭게 적어주세요." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3.5 text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500 transition"></textarea>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <input type="checkbox" id="privacyAgree" required class="w-5 h-5 accent-emerald-500 rounded bg-slate-900 border-slate-700">
+                        <label for="privacyAgree" class="text-xs text-slate-400">개인정보 수집 및 이용에 동의합니다. (상담 목적 외 사용되지 않습니다)</label>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-slate-950 font-extrabold py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition transform active:scale-95 text-lg">
+                        실시간 견적 및 무료 상담 신청하기
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="history" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                <div>
+                    <span class="text-emerald-600 font-bold tracking-wider uppercase text-sm">Live Status</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900 mt-1">실시간 접수 현황</h2>
+                    <p class="text-slate-600 mt-1">방금 접수된 폐차 상담 내역을 실시간으로 확인하실 수 있습니다.</p>
+                </div>
+                <div class="flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-4 py-2 rounded-xl">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                    <span>실시간 접수 시스템 가동 중</span>
+                </div>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200 text-slate-400 text-xs uppercase tracking-wider">
+                            <th class="py-4 px-6 font-semibold">접수번호</th>
+                            <th class="py-4 px-6 font-semibold">신청자</th>
+                            <th class="py-4 px-6 font-semibold">차량정보</th>
+                            <th class="py-4 px-6 font-semibold">폐차유형</th>
+                            <th class="py-4 px-6 font-semibold">접수시간</th>
+                            <th class="py-4 px-6 font-semibold">처리상태</th>
+                        </tr>
+                    </thead>
+                    <tbody id="inquiryTableBody" class="divide-y divide-slate-100 text-sm text-slate-700">
+                        <!-- Initial mock rows -->
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-4 px-6 font-mono text-slate-400">#AC-9821</td>
+                            <td class="py-4 px-6 font-medium">김** 님</td>
+                            <td class="py-4 px-6">쏘나타 (12주****)</td>
+                            <td class="py-4 px-6"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">일반폐차</span></td>
+                            <td class="py-4 px-6 text-slate-400">10분 전</td>
+                            <td class="py-4 px-6"><span class="text-emerald-600 font-bold"><i class="fa-solid fa-check-circle"></i> 견적 산정중</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-4 px-6 font-mono text-slate-400">#AC-9820</td>
+                            <td class="py-4 px-6 font-medium">이** 님</td>
+                            <td class="py-4 px-6">싼타페 (56오****)</td>
+                            <td class="py-4 px-6"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-teal-100 text-teal-800">조기폐차</span></td>
+                            <td class="py-4 px-6 text-slate-400">25분 전</td>
+                            <td class="py-4 px-6"><span class="text-teal-600 font-bold"><i class="fa-solid fa-truck-fast"></i> 견인 배차완료</span></td>
+                        </tr>
+                        <tr class="hover:bg-slate-50 transition">
+                            <td class="py-4 px-6 font-mono text-slate-400">#AC-9819</td>
+                            <td class="py-4 px-6 font-medium">박** 님</td>
+                            <td class="py-4 px-6">모닝 (34더****)</td>
+                            <td class="py-4 px-6"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800">압류폐차</span></td>
+                            <td class="py-4 px-6 text-slate-400">1시간 전</td>
+                            <td class="py-4 px-6"><span class="text-blue-600 font-bold"><i class="fa-solid fa-file-shield"></i> 말소완료</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center text-white font-bold">
+                        <i class="fa-solid fa-car-burst"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">안심폐차 센터</span>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed">정부 인증 관허 제2024-1호 폐차장으로 투명하고 정확한 보상금과 안전한 말소를 약속드립니다.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">고객 센터</h4>
+                <div class="text-2xl font-black text-emerald-400 mb-2">1588-0000</div>
+                <p class="text-xs text-slate-400">평일 09:00 - 18:00 (주말/공휴일 정상 접수)</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">바로가기</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#about" class="hover:text-white transition">회사 소개</a></li>
+                    <li><a href="#process" class="hover:text-white transition">폐차 절차 안내</a></li>
+                    <li><a href="#documents" class="hover:text-white transition">필요 서류 안내</a></li>
+                    <li><a href="#inquiry" class="hover:text-white transition">견적 신청하기</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">사업자 정보</h4>
+                <p class="text-xs text-slate-400 space-y-1">
+                    상호: (주)안심오토모티브<br>
+                    대표: 김안심 | 사업자등록번호: 123-81-XXXXX<br>
+                    관허등록번호: 제2024-1호<br>
+                    주소: 서울특별시 서초구 양재대로 123
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+            &copy; 2026 안심폐차 센터 All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- Success Modal Notification -->
+    <div id="successModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300">
+        <div class="bg-slate-900 border border-slate-700 p-8 rounded-3xl max-w-md w-full mx-4 text-center space-y-6 shadow-2xl transform scale-95 transition-transform duration-300" id="modalContent">
+            <div class="w-20 h-20 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-4xl mx-auto animate-bounce">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-2xl font-bold text-white">견적 및 상담 접수 완료!</h3>
+                <p class="text-slate-300 text-sm">전문 카마스터가 내용을 확인한 후 입력하신 연락처(<span id="modalPhoneText" class="text-emerald-400 font-semibold"></span>)로 5분 내에 안내 전화를 드립니다.</p>
+            </div>
+            <button onclick="closeModal()" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3.5 rounded-xl transition shadow-lg shadow-emerald-500/20">
+                확인
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Form submission handling with animation and dynamic table updates
+        const inquiryForm = document.getElementById('inquiryForm');
+        const successModal = document.getElementById('successModal');
+        const modalContent = document.getElementById('modalContent');
+        const modalPhoneText = document.getElementById('modalPhoneText');
+        const inquiryTableBody = document.getElementById('inquiryTableBody');
+
+        inquiryForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('userName').value.trim();
+            const phone = document.getElementById('userPhone').value.trim();
+            const carNum = document.getElementById('carNumber').value.trim();
+            const carModel = document.getElementById('carModel').value.trim() || '일반 차량';
+            const scrapType = document.getElementById('scrapType').value;
+
+            // Mask name for privacy in the public history list (e.g. 홍길동 -> 홍*동 or 김**)
+            const maskedName = name.length > 1 ? name[0] + '**' : name;
+            // Mask part of car number
+            const maskedCarNum = carNum.length > 3 ? carNum.substring(0, 2) + '**' + carNum.substring(carNum.length - 2) : carNum;
+
+            // Generate unique tracking ID
+            const randomId = '#AC-' + Math.floor(1000 + Math.random() * 9000);
+
+            // Create new table row
+            const newRow = document.createElement('tr');
+            newRow.className = 'hover:bg-slate-50 transition bg-emerald-50/50 animate-pulse';
+            newRow.innerHTML = `
+                <td class="py-4 px-6 font-mono text-emerald-600 font-bold">${randomId}</td>
+                <td class="py-4 px-6 font-medium">${maskedName} 님</td>
+                <td class="py-4 px-6">${carModel} (${maskedCarNum})</td>
+                <td class="py-4 px-6"><span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">${scrapType}</span></td>
+                <td class="py-4 px-6 text-slate-400">방금 전</td>
+                <td class="py-4 px-6"><span class="text-emerald-600 font-bold"><i class="fa-solid fa-spinner animate-spin"></i> 접수 대기중</span></td>
+            `;
+
+            // Prepend new row to table
+            inquiryTableBody.insertBefore(newRow, inquiryTableBody.firstChild);
+
+            // Show modal popup
+            modalPhoneText.textContent = phone;
+            successModal.classList.remove('hidden');
+            setTimeout(() => {
+                successModal.classList.remove('opacity-0');
+                modalContent.classList.remove('scale-95');
+                modalContent.classList.add('scale-100');
+            }, 10);
+
+            // Reset form
+            inquiryForm.reset();
+        });
+
+        function closeModal() {
+        }
+    </script>
+</body>
+</html>
